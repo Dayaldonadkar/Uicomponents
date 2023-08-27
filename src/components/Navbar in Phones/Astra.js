@@ -2,7 +2,7 @@ import React from "react";
 import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import CloseIcon from "@mui/icons-material/Close";
 
-const Navbar1 = ({
+const Astra = ({
   li,
   li2,
   li3,
@@ -30,7 +30,7 @@ const Navbar1 = ({
       <div
         className={`${hamburger ? "bg-green-400" : `${bgcolor}`} ${
           hamburger ? "h-screen" : `${bgcolor}`
-        } px-5 py-4 lg:px-20`}
+        } px-5 py-4`}
       >
         <div className="flex justify-between items-center">
           <div>
@@ -113,4 +113,4 @@ const Navbar1 = ({
   );
 };
 
-export default Navbar1;
+export default Astra;
