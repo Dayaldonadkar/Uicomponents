@@ -23,6 +23,8 @@ const Navbars = () => {
           bgcolor="bg-white"
           toggleHam={toggleHam}
           hamburger={hamburger}
+          hoverbuttoncolor="hover:bg-grry-700" //not working
+          hoverborder="hover:border-white"
         />
       </div>
       <div>
@@ -38,6 +40,9 @@ const Navbars = () => {
           img="https://static.shuffle.dev/components/preview/1d434082-6186-4123-90b0-b38266853c0d/assets/public/aurora-assets/logos/aurora-logo-white.svg#"
           miui="white"
           toggleHam={toggleHam}
+          buttoncolor="bg-white"
+          hovertext="text-black"
+          onhoverbutton=""
         />
       </div>
 

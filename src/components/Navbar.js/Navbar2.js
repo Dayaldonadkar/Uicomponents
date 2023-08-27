@@ -3,7 +3,9 @@ import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Navbar2 = ({ img, li1, li2, li3, li4, button1, button2 }) => {
-  const [hamburger, setHamburger] = useState(false);
+  const [hamburger, setHamburger] = useState(true);
+
+  console.log("button", button1);
 
   const toggleHam = () => {
     setHamburger(!hamburger);
@@ -32,7 +34,7 @@ const Navbar2 = ({ img, li1, li2, li3, li4, button1, button2 }) => {
             onClick={toggleHam}
             className={`${
               hamburger ? "" : "absolute z-10 left-60 -top-[119px]"
-            } hidden`}
+            } md:hidden`}
           >
             {hamburger ? <DensityMediumIcon /> : <CloseIcon />}
           </div>
@@ -42,10 +44,10 @@ const Navbar2 = ({ img, li1, li2, li3, li4, button1, button2 }) => {
             <div className="absolute top-0 left-0 bg-white h-screen w-[80%] py-10 pl-10 flex flex-col justify-between">
               <img className="w-36" src={img} alt="" />
               <ul className="space-y-7">
-                <li>{li1}</li>
-                <li>{li2}</li>
-                <li>{li3}</li>
-                <li>{li4}</li>
+                <li className="hover:underline">{li1}</li>
+                <li className="hover:underline">{li2}</li>
+                <li className="hover:underline">{li3}</li>
+                <li className="hover:underline">{li4}</li>
               </ul>
               <div className="flex text-black flex-col space-y-3 w-[90%]">
                 <button className="border border-black py-3 rounded-full hover:text-white hover:bg-black">

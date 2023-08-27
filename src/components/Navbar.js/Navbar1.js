@@ -15,6 +15,12 @@ const Navbar1 = ({
   miui,
   toggleHam,
   hamburger,
+  hovertext,
+  buttoncolor,
+  onhoverbutton,
+  hoverborder,
+  hoverbuttoncolor,
+  hoverbuttonborder,
 }) => {
   console.log("img", img);
   console.log(textcolor, "textcolor");
@@ -49,7 +55,10 @@ const Navbar1 = ({
           </div>
           <div className="hidden md:block">
             <div className="flex space-x-3">
-              <button className="flex items-center justify-center px-4 text-center text-sm text-gray-700 font-semibold border border-gray-200 hover:bg-gray-100 shadow-lg rounded-lg transition duration-200">
+              {/* <button className="flex items-center justify-center px-4 text-center text-sm text-gray-700 font-semibold border border-gray-200 hover:bg-gray-100 shadow-lg rounded-lg transition duration-200"> */}
+              <button
+                className={`flex items-center justify-center px-4 text-center text-sm border border-black text-gray-700 ${hoverborder} ${buttoncolor} ${hoverbuttoncolor}  font-semibold  shadow-lg rounded-lg transition duration-500`}
+              >
                 {button1}
               </button>
               {/* <button className="flex items-center justify-center h-12 px-4 text-center text-base text-white font-semibold bg-gradient-to-b from-cyanGreen-800 to-cyan-800 rounded-lg transition duration-200">
