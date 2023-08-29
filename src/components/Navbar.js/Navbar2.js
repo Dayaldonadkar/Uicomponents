@@ -30,20 +30,20 @@ const Navbar2 = ({ img, li1, li2, li3, li4, button1, button2 }) => {
               </button>
             </div>
           </div>
-          <div
-            onClick={toggleHam}
-            className={`${
-              hamburger ? "" : "absolute z-10 left-60 -top-[119px]"
-            } md:hidden`}
-          >
+          <div onClick={toggleHam} className="md:hidden">
             {hamburger ? <DensityMediumIcon /> : <CloseIcon />}
           </div>
         </div>
         <div className="md:hidden">
           {!hamburger && (
-            <div className="absolute top-0 left-0 bg-white h-screen w-[80%] py-10 pl-10 flex flex-col justify-between">
-              <img className="w-36" src={img} alt="" />
-              <ul className="space-y-7">
+            <div className="absolute top-0 left-0 bg-white w-[80%] py-10 pl-10 flex flex-col justify-between z-20">
+              <div className="flex justify-between items-center ">
+                <img className="w-36" src={img} alt="" />
+                <div onClick={() => toggleHam(false)}>
+                  <CloseIcon />
+                </div>
+              </div>
+              <ul className="space-y-7 py-28">
                 <li className="hover:underline">{li1}</li>
                 <li className="hover:underline">{li2}</li>
                 <li className="hover:underline">{li3}</li>

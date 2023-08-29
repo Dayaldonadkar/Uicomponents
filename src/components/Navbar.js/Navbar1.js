@@ -17,8 +17,6 @@ const Navbar1 = ({
   hamburger,
   hovertext,
   buttoncolor,
-  onhoverbutton,
-  hoverborder,
   hoverbuttoncolor,
   hoverbuttonborder,
 }) => {
@@ -45,19 +43,19 @@ const Navbar1 = ({
 
           <div className="hidden md:block">
             <ul
-              className={`${textcolor} flex space-x-4 lg:space-x-10 xl:space-x-14 text-sm lg:text-base`}
+              className={`${textcolor} flex space-x-7 lg:space-x-10 xl:space-x-14 text-sm lg:text-base`}
             >
-              <li>{li}</li>
-              <li>{li2}</li>
-              <li>{li3}</li>
-              <li>{li4}</li>
+              <li className="hover:underline text-sm">{li}</li>
+              <li className="hover:underline text-sm">{li2}</li>
+              <li className="hover:underline text-sm">{li3}</li>
+              <li className="hover:underline text-sm">{li4}</li>
             </ul>
           </div>
           <div className="hidden md:block">
             <div className="flex space-x-3">
               {/* <button className="flex items-center justify-center px-4 text-center text-sm text-gray-700 font-semibold border border-gray-200 hover:bg-gray-100 shadow-lg rounded-lg transition duration-200"> */}
               <button
-                className={`flex items-center justify-center px-4 text-center text-sm border border-black text-gray-700 ${hoverborder} ${buttoncolor} ${hoverbuttoncolor}  font-semibold  shadow-lg rounded-lg transition duration-500`}
+                className={`flex items-center justify-center px-4 text-center text-sm border text-gray-700  ${buttoncolor} ${hoverbuttonborder} ${hoverbuttoncolor}  font-semibold  shadow-lg rounded-lg transition duration-500`}
               >
                 {button1}
               </button>
