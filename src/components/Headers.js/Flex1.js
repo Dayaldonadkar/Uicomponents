@@ -3,8 +3,8 @@ import React from "react";
 const Flex1 = () => {
   return (
     <main>
-      <div className="px-4 pt-20 x6:px-12 sm:px-24 md:px-4 pmd:px-14 lg:px-16 md:flex md:justify-between md:item-start">
-        <div className="md:w-[40%]">
+      <div className="px-4 pt-20 md1:px-8 x6:px-8 sm:px-24 md:px-4 pmd:px-[10%] pmd1:px-[10%] lg:px-[8%] md:flex md:justify-between md:item-start">
+        <div className="md:w-[45%] pmd:w-[50%] pmd1:w-[45%] xl:flex xl:flex-col xl:justify-between xl:py-14">
           <h1 className="text-3xl md:text-5xl lg:text-6xl d px-2 font-bold text-center md:text-left">
             A small business is only as good as its tools.
           </h1>
@@ -16,17 +16,17 @@ const Flex1 = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0">
-            <button className="bg-green-500  py-5 px-7 rounded-md shadow-sm text-white hover:bg-green-600">
+          <div className="flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-4">
+            <button className="bg-green-500  py-5 px-7 rounded-md shadow-sm text-white hover:bg-green-600 md:px-10 md:py-4">
               Request a Demo
             </button>
-            <button className="py-5 px-7 bg-[#F4F4F5] rounded-md shadow-sm">
+            <button className="py-5 px-7 bg-[#F4F4F5] rounded-md shadow-sm md:py-4 ring-2 ring-[#E5E7EB] hover:bg-[#E5E7EB] border border-[#E5E7EB]">
               Sign Up
             </button>
           </div>
         </div>
 
-        <div className="pt-20 md:pt-0 md:w-[45%]">
+        <div className="pt-20 md:pt-0 md:w-[50%]">
           <div className="relative">
             <img
               className=""
