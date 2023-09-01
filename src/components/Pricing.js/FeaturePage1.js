@@ -1,9 +1,8 @@
 import React from "react";
-import bg from "./pattern-light-big.svg";
 import Feature1 from "./Feature1";
-import Feature2 from "./Feature2";
+import bg from "./pattern-light-big.svg";
 
-const FlexPricing = () => {
+const FeaturePage1 = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
@@ -22,11 +21,9 @@ const FlexPricing = () => {
         </div>
 
         <Feature1 />
-
-        <Feature2 />
       </div>
     </div>
   );
 };
 
-export default FlexPricing;
+export default FeaturePage1;

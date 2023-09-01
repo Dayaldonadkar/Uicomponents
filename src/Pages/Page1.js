@@ -4,6 +4,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import Flex1 from "../components/Headers.js/Flex1";
 import Navbar4 from "../components/Navbar.js/Navbar4";
 import FlexPricing from "../components/Pricing.js/FlexPricing";
+import Feature1 from "../components/Pricing.js/Feature1";
+import FeaturePage1 from "../components/Pricing.js/FeaturePage1";
+import FeaturePage2 from "../components/Pricing.js/FeaturePage2";
 
 const Page1 = () => {
   return (
@@ -19,7 +22,8 @@ const Page1 = () => {
         button1="Try 14 Days Free Trials"
       />
       <Flex1 />
-      <FlexPricing />
+      <FeaturePage1 />
+      <FeaturePage2 />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import React from "react";
 const Flex1 = () => {
   return (
     <main>
-      <div className="px-4 pt-20 md1:px-8 x6:px-8 sm:px-24 md:px-4 pmd:px-[7%] pmd1:px-[10%] lg:px-[8%] xl:px-[14%] xl2:px-[16%] md:flex md:justify-between md:item-start">
+      <div className="px-4 pt-20 md1:px-8 x6:px-8 sm:px-24 md:px-4 pmd:px-[7%] pmd1:px-[10%] lg:px-[8%] xl:px-[14%] xl2:px-[16%] md:flex md:justify-between md:item-start mb-16">
         <div className="md:w-[45%] pmd:w-[50%] pmd1:w-[45%] xl:flex xl:flex-col xl:justify-between xl2:py-14">
           <h1 className="text-3xl md:text-5xl lg:text-6xl d px-2 font-bold text-center md:text-left">
             A small business is only as good as its tools.
