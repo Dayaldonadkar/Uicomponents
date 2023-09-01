@@ -3,6 +3,7 @@ import DensityMediumIcon from "@mui/icons-material/DensityMedium";
 import CloseIcon from "@mui/icons-material/Close";
 import Flex1 from "../components/Headers.js/Flex1";
 import Navbar4 from "../components/Navbar.js/Navbar4";
+import FlexPricing from "../components/Pricing.js/FlexPricing";
 
 const Page1 = () => {
   return (
@@ -18,6 +19,7 @@ const Page1 = () => {
         button1="Try 14 Days Free Trials"
       />
       <Flex1 />
+      <FlexPricing />
     </div>
   );
 };

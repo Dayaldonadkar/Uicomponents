@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Style.css";
 
 const Navbar4 = ({
   li1,
@@ -12,7 +13,13 @@ const Navbar4 = ({
 }) => {
   const [hamburger, setHamburger] = useState(false);
   const toggleHam = () => {
-    setHamburger(!hamburger);
+    setHamburger(true);
+    document.body.classList.add("no-scroll");
+  };
+
+  const closeNav = () => {
+    setHamburger(false);
+    document.body.classList.add("no-scroll");
   };
   return (
     <main>
@@ -40,29 +47,30 @@ const Navbar4 = ({
           {hamburger ? "" : <DensityMediumIcon />}
         </div>
       </div>
+      <div className="overflow-hidden">
+        {hamburger && (
+          <div className="absolute top-0 bg-white w-[72%] xxs:w-[65%] xs:w-[53%] sm:w-[45%] h-screen px-7 space-y-5 py-14 md:hidden flex flex-col justify-between">
+            <div className="flex justify-between items-center">
+              <img src={img} alt="" />
 
-      {hamburger && (
-        <div className="absolute top-0 bg-white w-[72%] xxs:w-[65%] xs:w-[53%] sm:w-[45%] h-screen px-7 space-y-5 py-14 md:hidden flex flex-col justify-between">
-          <div className="flex justify-between items-center">
-            <img src={img} alt="" />
-
-            <div onClick={() => toggleHam(false)}>
-              <CloseIcon />
+              <div onClick={() => closeNav()}>
+                <CloseIcon />
+              </div>
             </div>
+
+            <ul className="space-y-7 pt-8">
+              <li>{li1}</li>
+              <li>{li2}</li>
+              <li>{li3}</li>
+              <li>{li4}</li>
+            </ul>
+
+            <button className="flex justify-center items-center px-3 py-2 text-md rounded-lg bg-indigo-500 text-white hover:bg-indigo-600">
+              {button1}
+            </button>
           </div>
-
-          <ul className="space-y-7 pt-8">
-            <li>{li1}</li>
-            <li>{li2}</li>
-            <li>{li3}</li>
-            <li>{li4}</li>
-          </ul>
-
-          <button className="flex justify-center items-center px-3 py-2 text-md rounded-lg bg-indigo-500 text-white hover:bg-indigo-600">
-            {button1}
-          </button>
-        </div>
-      )}
+        )}
+      </div>
     </main>
   );
 };

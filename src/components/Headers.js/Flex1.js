@@ -3,8 +3,8 @@ import React from "react";
 const Flex1 = () => {
   return (
     <main>
-      <div className="px-4 pt-20 md1:px-8 x6:px-8 sm:px-24 md:px-4 pmd:px-[10%] pmd1:px-[10%] lg:px-[8%] md:flex md:justify-between md:item-start">
-        <div className="md:w-[45%] pmd:w-[50%] pmd1:w-[45%] xl:flex xl:flex-col xl:justify-between xl:py-14">
+      <div className="px-4 pt-20 md1:px-8 x6:px-8 sm:px-24 md:px-4 pmd:px-[7%] pmd1:px-[10%] lg:px-[8%] xl:px-[14%] xl2:px-[16%] md:flex md:justify-between md:item-start">
+        <div className="md:w-[45%] pmd:w-[50%] pmd1:w-[45%] xl:flex xl:flex-col xl:justify-between xl2:py-14">
           <h1 className="text-3xl md:text-5xl lg:text-6xl d px-2 font-bold text-center md:text-left">
             A small business is only as good as its tools.
           </h1>
@@ -26,7 +26,7 @@ const Flex1 = () => {
           </div>
         </div>
 
-        <div className="pt-20 md:pt-0 md:w-[50%]">
+        <div className="pt-20 md:pt-0 md:w-[50%] xl2:w-[50% xl2:flex xl2:justify-end">
           <div className="relative">
             <img
               className=""
@@ -41,7 +41,7 @@ const Flex1 = () => {
             />
 
             <img
-              className="absolute -right-3 -bottom-7  w-[20%]"
+              className="absolute -right-3 -bottom-7  w-[20%] lg:w-[25%] xl:w-[30%] xl2:-right-3"
               src="https://shuffle.dev/flex-ui-assets/elements/dots3-blue.svg"
               alt=""
             />
