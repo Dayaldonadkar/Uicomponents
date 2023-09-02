@@ -2,12 +2,13 @@ import React from "react";
 import bg from "./pattern-light-big.svg";
 import Feature1 from "./Feature1";
 import Feature2 from "./Feature2";
+import Feature3 from "./Feature3";
 
 const FlexPricing = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bg})` }}
-      className="flex justify-center pt-16"
+      className="flex justify-center pt-16 mt-16"
     >
       <div className="w-[80%] md:[]">
         <div className="text-center">
@@ -21,9 +22,10 @@ const FlexPricing = () => {
           </p>
         </div>
 
-        <Feature1 />
+        {/* <Feature1 />
 
-        <Feature2 />
+        <Feature2 /> */}
+        <Feature3 />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import FeaturesComponent from "./FeaturesComponent";
 
 const Feature2 = () => {
   return (
-    <div className="space-y-16 lg:flex lg:items-center lg:space-y-0 ">
+    <div className="space-y-16 lg:flex lg:items-center lg:space-y-0 pb-20">
       <div className="space-y-16 md:space-y-0 lg:space-y-6 md:flex lg:flex-col lg:w-[80%] ">
         <div className="">
           <FeaturesComponent
@@ -18,7 +18,7 @@ const Feature2 = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center w-[90%] xl2:w-[95%]">
+      <div className="flex justify-center xl:w-[90%] xl2:w-[95%]">
         <img
           className=""
           src="https://shuffle.dev/flex-ui-assets/images/features/stock.png"
